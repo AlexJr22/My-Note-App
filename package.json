@@ -1,0 +1,18 @@
+{
+    "name": "my-note-app",
+    "version": "1.0.0",
+    "description": "Creating my first Note app with JavaScript",
+    "scripts": {},
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AlexJr22/My-Note-app.git"
+    },
+    "keywords": [],
+    "author": "Alex Junior",
+    "license": "Mit",
+    "bugs": {
+        "url": "https://github.com/AlexJr22/My-Note-app/issues"
+    },
+    "homepage": "https://github.com/AlexJr22/My-Note-app#readme"
+}
