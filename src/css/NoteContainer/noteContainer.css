@@ -26,7 +26,11 @@
   min-height: 400px;
   max-height: 400px;
   margin-inline: 15px;
+  padding: 5px;
+  border-radius: 1rem;
 }
 #noteContainer section#container .noteCard h2.titleCard {
   color: #73ff76;
+  text-transform: capitalize;
+  text-align: center;
 }/*# sourceMappingURL=noteContainer.css.map */

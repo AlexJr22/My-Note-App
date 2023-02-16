@@ -35,9 +35,12 @@ $color2: #73ff76;
             max-height: 400px;
 
             margin-inline: 15px;
-
+            padding: 5px;
+            border-radius: 1rem;
             h2.titleCard {
                 color: $color2;
+                text-transform: capitalize;
+                text-align: center;
             }
         }
     }
