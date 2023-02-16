@@ -1,0 +1,15 @@
+$bgColor: #212739;
+$color1: #00F9FF;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,html {
+    background-color: $bgColor;
+    color: $color1;
+
+    height: 100vh;
+}

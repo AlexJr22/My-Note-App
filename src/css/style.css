@@ -1,0 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: #212739;
+  color: #00F9FF;
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */
