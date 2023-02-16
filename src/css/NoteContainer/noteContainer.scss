@@ -3,10 +3,10 @@ $color1: #00f9ff;
 $color2: #73ff76;
 
 #noteContainer {
-    border: 1px solid white;
-
     width: 100%;
     height: 100%;
+
+    padding-top: 32px;
 
     > h1 {
         font-variant: small-caps;
@@ -14,10 +14,31 @@ $color2: #73ff76;
         text-align: center;
         letter-spacing: 1em;
 
-        margin: 2rem 0px;
+        margin-bottom: 32px;
     }
 
-    h2.titleCard {
-        color: $color2;
+    section#container {
+        height: 80%;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+
+        overflow-x: scroll;
+        overflow-y: hidden;
+        .noteCard {
+            border: wheat 1px solid;
+            display: block;
+            min-width: 350px;
+            max-width: 350px;
+            min-height: 400px;
+            max-height: 400px;
+
+            margin-inline: 15px;
+
+            h2.titleCard {
+                color: $color2;
+            }
+        }
     }
 }

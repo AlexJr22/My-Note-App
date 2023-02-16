@@ -16,5 +16,7 @@ body,html {
     color: $color1;
     font-family: 'Ubuntu', sans-serif;
 
-    height: 100vh;
+    overflow-x: hidden;
+
+    height: 100%;
 }
