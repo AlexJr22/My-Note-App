@@ -3,6 +3,18 @@
   height: 100%;
   padding-top: 32px;
 }
+#noteContainer #addNote {
+  font-weight: bold;
+  height: 45px;
+  width: 80px;
+  background-color: #00f9ff;
+  border: none;
+  border-radius: 0.3rem;
+  margin-left: 1rem;
+}
+#noteContainer #addNote:active {
+  background-color: #00c5c9;
+}
 #noteContainer > h1 {
   font-variant: small-caps;
   font-size: 4em;
@@ -12,7 +24,7 @@
 }
 #noteContainer section#container {
   font-family: "Ubuntu", sans-serif;
-  height: 80%;
+  height: 75%;
   width: 100%;
   display: flex;
   align-items: center;

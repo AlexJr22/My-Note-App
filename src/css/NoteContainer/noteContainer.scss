@@ -8,6 +8,20 @@ $color2: #73ff76;
 
     padding-top: 32px;
 
+    #addNote {
+        font-weight: bold;
+        height: 45px;
+        width: 80px;
+        background-color: $color1;
+        border: none;
+        border-radius: .3rem;
+        margin-left: 1rem;
+        
+        &:active {
+            background-color: #00c5c9;
+        }
+    }
+
     > h1 {
         font-variant: small-caps;
         font-size: 4em;
@@ -18,8 +32,8 @@ $color2: #73ff76;
     }
 
     section#container {
-        font-family: 'Ubuntu', sans-serif;
-        height: 80%;
+        font-family: "Ubuntu", sans-serif;
+        height: 75%;
         width: 100%;
 
         display: flex;
@@ -27,6 +41,7 @@ $color2: #73ff76;
 
         overflow-x: scroll;
         overflow-y: hidden;
+
         .noteCard {
             background-color: #0d142b;
 
@@ -52,7 +67,7 @@ $color2: #73ff76;
                 text-align: center;
             }
 
-            >p {
+            > p {
                 margin-top: 1rem;
             }
         }
