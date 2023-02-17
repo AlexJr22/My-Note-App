@@ -12,7 +12,7 @@ const notes = [
 const containerNotes = document.getElementById("container");
 
 const generateNotes = () => {
-    containerNotes.innerHTML = '';
+    containerNotes.innerHTML = "";
     notes.forEach((note) => {
         containerNotes.innerHTML += `
         <div class="noteCard">
@@ -25,5 +25,13 @@ const generateNotes = () => {
         `;
     });
 };
+
+const addBtn = document.getElementById("addNote");
+
+const containerNewNote = document.getElementById("containerNewNote");
+
+addBtn.addEventListener("click", () =>
+    containerNewNote.classList.toggle("active")
+);
 
 onload(generateNotes());

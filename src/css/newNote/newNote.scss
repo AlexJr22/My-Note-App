@@ -23,3 +23,7 @@ $color2: #73ff76;
         background-color: $bgColor;
     }
 }
+
+#containerNewNote.active {
+    display: block;
+}

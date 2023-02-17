@@ -13,4 +13,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #212739;
+}
+
+#containerNewNote.active {
+  display: block;
 }/*# sourceMappingURL=newNote.css.map */
