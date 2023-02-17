@@ -1,10 +1,10 @@
 const notes = [
     {
-        titulo: "Compras",
+        title: "Compras",
         content: "Comprar frutas e legumes",
     },
     {
-        titulo: "Entregar o trabalho",
+        title: "Entregar o trabalho",
         content: "Entregar o trabalho de estrutura de dados",
     },
 ];
@@ -16,7 +16,7 @@ const generateNotes = () => {
     notes.forEach((note) => {
         containerNotes.innerHTML += `
         <div class="noteCard">
-            <h2 class="titleCard">${note.titulo}</h2>
+            <h2 class="titleCard">${note.title}</h2>
 
             <p>
                 ${note.content}
