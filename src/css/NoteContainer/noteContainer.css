@@ -31,6 +31,14 @@
   overflow-x: scroll;
   overflow-y: hidden;
 }
+#noteContainer section#container::-webkit-scrollbar {
+  background-color: #212739;
+  height: 10px;
+}
+#noteContainer section#container::-webkit-scrollbar-thumb {
+  background-color: #00f9ff;
+  border-radius: 1rem;
+}
 #noteContainer section#container .noteCard {
   background-color: #0d142b;
   overflow: hidden;

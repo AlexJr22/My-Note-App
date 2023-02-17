@@ -14,9 +14,9 @@ $color2: #73ff76;
         width: 80px;
         background-color: $color1;
         border: none;
-        border-radius: .3rem;
+        border-radius: 0.3rem;
         margin-left: 1rem;
-        
+
         &:active {
             background-color: #00c5c9;
         }
@@ -41,6 +41,15 @@ $color2: #73ff76;
 
         overflow-x: scroll;
         overflow-y: hidden;
+
+        &::-webkit-scrollbar {
+            background-color: $bgColor;
+            height: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $color1;
+            border-radius: 1rem;
+        }
 
         .noteCard {
             background-color: #0d142b;
