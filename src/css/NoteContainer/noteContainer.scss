@@ -18,6 +18,7 @@ $color2: #73ff76;
     }
 
     section#container {
+        font-family: 'Ubuntu', sans-serif;
         height: 80%;
         width: 100%;
 
@@ -28,6 +29,8 @@ $color2: #73ff76;
         overflow-y: hidden;
         .noteCard {
             background-color: #0d142b;
+
+            overflow: hidden;
 
             display: block;
             min-width: 350px;
@@ -47,6 +50,10 @@ $color2: #73ff76;
                 color: $color2;
                 text-transform: capitalize;
                 text-align: center;
+            }
+
+            >p {
+                margin-top: 1rem;
             }
         }
     }
