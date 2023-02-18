@@ -1,6 +1,6 @@
 #containerNewNote {
   background-color: rgba(0, 0, 0, 0.7);
-  display: none;
+  display: block;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -13,6 +13,24 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #212739;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+#containerNewNote #newNote input[type=text] {
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  color: #73ff76;
+  background-color: #32353d;
+  border: none;
+  padding: 10px;
+}
+#containerNewNote #newNote #content {
+  height: 100%;
 }
 
 #containerNewNote.active {
