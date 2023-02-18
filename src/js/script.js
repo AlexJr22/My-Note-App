@@ -30,8 +30,16 @@ const addBtn = document.getElementById("addNote");
 
 const containerNewNote = document.getElementById("containerNewNote");
 
-addBtn.addEventListener("click", () =>
-    containerNewNote.classList.toggle("active")
-);
+// containerNewNote.addEventListener("click", (event) => console.log(event));
+document.addEventListener("keydown", (e) => {
+    if (containerNewNote.className == "active" && e.key == "Escape") {
+        containerNewNote.classList.toggle("active");
+    }
+});
 
-onload(generateNotes());
+
+addBtn.addEventListener("click", (e) => {
+    containerNewNote.classList.toggle("active");
+});
+
+generateNotes();
