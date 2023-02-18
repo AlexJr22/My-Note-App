@@ -28,9 +28,10 @@ $color2: #73ff76;
         text-align: center;
 
         padding: 1rem;
-
         gap: 1rem;
-        input[type="text"] {
+
+        border-radius: 1rem;
+        input[type="text"], #content {
             width: 100%;
             outline: none;
             font-size: 16px;
@@ -38,10 +39,12 @@ $color2: #73ff76;
             background-color: #32353d;
             border: none;
             padding: 10px;
+            border-radius: 0.3rem;
         }
 
         #content {
             height: 100%;
+            resize: none;
         }
     }
 }
