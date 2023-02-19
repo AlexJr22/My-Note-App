@@ -1,11 +1,10 @@
-import { generateNotes } from "./generateNotes.js";
-import { notes } from "./notes.js";
+import { generateNote } from "./generateNotes.js";
+import { generateNewNote } from "./notes.js";
 
 const addBtn = document.getElementById("addNote");
-const submitButton = document.getElementById("submitNote");
 const containerNewNote = document.getElementById("containerNewNote");
-const inputTitle = document.getElementById("title");
-const inputContent = document.getElementById("content");
+
+const submitButton = document.getElementById("submitNote");
 
 containerNewNote.addEventListener("click", (e) => {
     if (e.target.id == "containerNewNote") {
@@ -25,13 +24,9 @@ addBtn.addEventListener("click", () => {
 
 submitButton.addEventListener("click", () => {
     containerNewNote.classList.toggle("active");
-    notes.push(
-        {
-            title: inputTitle.value,
-            content: inputContent.value
-        }
-    );
-    generateNotes();
+
+    generateNewNote();
+    generateNote();
 });
 
-generateNotes();
+generateNote();

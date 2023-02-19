@@ -1,9 +1,13 @@
-import { notes } from "./notes.js";
-
 const containerNotes = document.getElementById("container");
 
-const generateNotes = () => {
+const generateNote = () => {
     containerNotes.innerHTML = "";
+
+    // recuperando as notas no localStorage
+    const savedNotes = localStorage.getItem("AllNotes");
+    const notes = savedNotes ? JSON.parse(savedNotes) : [];
+
+    // gerando notas para cada item no array
     notes.forEach((note) => {
         containerNotes.innerHTML += `
         <div class="noteCard">
@@ -17,4 +21,4 @@ const generateNotes = () => {
     });
 };
 
-export { generateNotes };
+export { generateNote };
