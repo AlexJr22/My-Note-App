@@ -65,7 +65,7 @@
   text-transform: capitalize;
   text-align: center;
 }
-#noteContainer section#container .noteCard > div #deleteNote {
+#noteContainer section#container .noteCard > div .deleteNote {
   position: absolute;
   background-color: transparent;
   width: 25px;
@@ -78,6 +78,6 @@
   right: -5px;
   top: -5px;
 }
-#noteContainer section#container .noteCard > div #deleteNote:active {
+#noteContainer section#container .noteCard > div .deleteNote:active {
   color: red;
 }/*# sourceMappingURL=noteContainer.css.map */
