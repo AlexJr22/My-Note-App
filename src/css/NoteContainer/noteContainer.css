@@ -51,13 +51,33 @@
   padding: 15px;
   border-radius: 1rem;
 }
-#noteContainer section#container .noteCard h2.titleCard {
+#noteContainer section#container .noteCard > div {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-bottom: 0.7em;
+}
+#noteContainer section#container .noteCard > div h2.titleCard {
+  width: 100%;
   border-bottom: 1px solid #73ff76;
   font-size: 1.2rem;
   color: #73ff76;
   text-transform: capitalize;
   text-align: center;
 }
-#noteContainer section#container .noteCard > p {
-  margin-top: 1rem;
+#noteContainer section#container .noteCard > div #deleteNote {
+  position: absolute;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00f9ff;
+  border: none;
+  right: -5px;
+  top: -5px;
+}
+#noteContainer section#container .noteCard > div #deleteNote:active {
+  color: red;
 }/*# sourceMappingURL=noteContainer.css.map */

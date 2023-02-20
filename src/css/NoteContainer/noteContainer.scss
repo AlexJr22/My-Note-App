@@ -65,18 +65,44 @@ $color2: #73ff76;
             padding: 15px;
             border-radius: 1rem;
 
-            h2.titleCard {
-                border-bottom: 1px solid $color2;
+            > div {
+                display: flex;
+                position: relative;
+                width: 100%;
+                margin-bottom: 0.7em;
 
-                font-size: 1.2rem;
+                h2.titleCard {
+                    width: 100%;
+                    border-bottom: 1px solid $color2;
 
-                color: $color2;
-                text-transform: capitalize;
-                text-align: center;
-            }
+                    font-size: 1.2rem;
 
-            > p {
-                margin-top: 1rem;
+                    color: $color2;
+                    text-transform: capitalize;
+                    text-align: center;
+                }
+
+                #deleteNote {
+                    position: absolute;
+                    background-color: transparent;
+
+                    width: 25px;
+                    height: 25px;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    color: $color1;
+                    border: none;
+
+                    right: -5px;
+                    top: -5px;
+
+                    &:active {
+                        color: red;
+                    }
+                }
             }
         }
     }
