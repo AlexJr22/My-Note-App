@@ -20,7 +20,6 @@ document.addEventListener("keydown", (e) => {
 
 addBtn.addEventListener("click", () => {
     containerNewNote.classList.toggle("active");
-    Notes.DeleteNote();
 });
 
 submitButton.addEventListener("click", () => {

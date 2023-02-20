@@ -11,6 +11,8 @@ $color2: #73ff76;
     width: 100%;
     height: 100%;
 
+    z-index: 10;
+
     #newNote {
         width: 650px;
         height: 550px;
@@ -31,6 +33,7 @@ $color2: #73ff76;
         gap: 1rem;
 
         border-radius: 1rem;
+
         input[type="text"],
         #content {
             width: 100%;
