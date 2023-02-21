@@ -1,3 +1,5 @@
+import { Notes } from "./notes.js";
+
 const containerNotes = document.getElementById("container");
 
 const generateNote = () => {
@@ -34,6 +36,8 @@ const generateNote = () => {
             />
         </svg>
         `;
+
+        buttonDelete.addEventListener("click", () => Notes.DeleteNote());
 
         div.appendChild(h2Title);
         div.appendChild(buttonDelete);
