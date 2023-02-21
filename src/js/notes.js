@@ -1,3 +1,5 @@
+import { generateNote } from "./generateNotes.js";
+
 const inputTitle = document.getElementById("title");
 const inputContent = document.getElementById("content");
 
@@ -20,9 +22,15 @@ const Notes = {
         localStorage.setItem("AllNotes", JSON.stringify(notes));
     },
 
-    DeleteNote: () => {
+    DeleteNote: (index) => {
         const savedNotes = localStorage.getItem("AllNotes");
         const notes = JSON.parse(savedNotes);
+
+        notes.splice(index, 1);
+
+        localStorage.setItem("AllNotes", JSON.stringify(notes));
+        console.log(notes);
+        generateNote();
     },
 };
 

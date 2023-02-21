@@ -3,14 +3,14 @@ import { Notes } from "./notes.js";
 const containerNotes = document.getElementById("container");
 
 const generateNote = () => {
-    // containerNotes.innerHTML = "";
+    containerNotes.innerHTML = "";
 
     // recuperando as notas no localStorage
     const savedNotes = localStorage.getItem("AllNotes");
     const notes = savedNotes ? JSON.parse(savedNotes) : [];
 
     // gerando notas para cada item no array
-    notes.forEach((note) => {
+    notes.forEach((note, index) => {
         let divNoteCard = document.createElement("div");
         divNoteCard.classList.add("noteCard");
 
@@ -37,7 +37,7 @@ const generateNote = () => {
         </svg>
         `;
 
-        buttonDelete.addEventListener("click", () => Notes.DeleteNote());
+        buttonDelete.addEventListener("click", () => Notes.DeleteNote(index));
 
         div.appendChild(h2Title);
         div.appendChild(buttonDelete);
