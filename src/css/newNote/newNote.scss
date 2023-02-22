@@ -1,0 +1,7 @@
+#containerNewNote {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}

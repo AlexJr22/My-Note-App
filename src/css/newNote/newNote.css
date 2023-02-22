@@ -1,0 +1,6 @@
+#containerNewNote {
+  display: none;
+}
+#containerNewNote.active {
+  display: block;
+}/*# sourceMappingURL=newNote.css.map */
