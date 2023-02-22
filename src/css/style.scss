@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+
+@import url(header/header.css);
+@import url(containerNote/containerNotes.css);
+@import url(newNote/newNote.css);
+
 * {
     margin: 0px;
     padding: 0px;
@@ -7,10 +12,14 @@
 
 body,
 html {
-    background-color: #ffd;
+    background-color: #fdfdee;
     font-family: "Ubuntu", sans-serif;
 
     overflow-x: hidden;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     height: 100%;
 }
