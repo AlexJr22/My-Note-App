@@ -1,7 +1,38 @@
 #containerNewNote {
-    display: none;
+    background-color: #00000085;
+
+    display: block;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
 
     &.active {
         display: block;
+    }
+
+    #newNote {
+        background-color: #a0a0ca;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        margin-inline: auto;
+
+        width: 450px;
+        height: 450px;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 7px;
+
+        gap: 1rem;
+
+        #content {
+            resize: none;
+            width: 100%;
+        }
     }
 }
