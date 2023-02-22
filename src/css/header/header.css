@@ -1,0 +1,10 @@
+#headerApp {
+  border-bottom: solid 1px #28283a;
+  padding: 1rem;
+  margin-inline: 1em;
+  display: flex;
+  justify-content: center;
+}
+#headerApp #Book {
+  color: #28283a;
+}/*# sourceMappingURL=header.css.map */

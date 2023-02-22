@@ -1,0 +1,14 @@
+$color1: #28283a;
+
+#headerApp {
+    border-bottom: solid 1px $color1;
+    padding: 1rem;
+    margin-inline: 1em;
+
+    display: flex;
+    justify-content: center;
+
+    #Book {
+        color: $color1;
+    }
+}
