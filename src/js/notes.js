@@ -20,6 +20,9 @@ const Notes = {
         notes.push(newNote[0]);
         console.log(notes);
         localStorage.setItem("AllNotes", JSON.stringify(notes));
+
+        inputTitle.value = "";
+        inputContent.value = "";
     },
 
     DeleteNote: (index) => {
