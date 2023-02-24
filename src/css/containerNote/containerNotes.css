@@ -21,4 +21,25 @@
   width: 100%;
   height: 250px;
   padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#noteContainer #container .noteCard > div {
+  border-bottom: 1px solid black;
+  position: relative;
+  margin-bottom: 5px;
+}
+#noteContainer #container .noteCard > div .deleteNote {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 0.2rem;
+  background-color: transparent;
+  color: red;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=containerNotes.css.map */
